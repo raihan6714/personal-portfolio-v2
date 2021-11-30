@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rahan - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/ar-favicon.jpg">
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/preloader.min.css" rel="stylesheet">
+    <link href="assets/css/circle.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="assets/css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="assets/css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="assets/css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="assets/css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="assets/css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="assets/css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="assets/css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="assets/css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="assets/css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="assets/css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="assets/css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="assets/js/modernizr.custom.js"></script>
+</head>
+
+<body class="about">
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img
+                            src="assets/img/styleswitcher/purple.png" alt="purple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img
+                            src="assets/img/styleswitcher/red.png" alt="red" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img
+                            src="assets/img/styleswitcher/blueviolet.png" alt="blueviolet" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img
+                            src="assets/img/styleswitcher/blue.png" alt="blue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img
+                            src="assets/img/styleswitcher/goldenrod.png" alt="goldenrod" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img
+                            src="assets/img/styleswitcher/magenta.png" alt="magenta" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img
+                            src="assets/img/styleswitcher/yellowgreen.png" alt="yellowgreen" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img
+                            src="assets/img/styleswitcher/orange.png" alt="orange" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img
+                            src="assets/img/styleswitcher/green.png" alt="green" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img
+                            src="assets/img/styleswitcher/yellow.png" alt="yellow" /></a>
+                </li>
+            </ul>
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box active">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li>
+        </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>ABOUT <span>ME</span></h1>
+        <span class="title-bg">Resume</span>
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+        <div class="container">
+            <div class="row">
+                <!-- Personal Info Starts -->
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <p class="text-justify">My knowledge in Web development started with watching a video on youtube.
+                        But all these
+                        elements were static. I wondered how I could change that. Search engines gave me three main
+                        directions for this purpose - html, css and javascript.
+                        I found many relevant articles, books, communities, and videos. In my free time I studied these
+                        materials and tried to apply their knowledge in practice.
+                        Later, my friends-programmers explained to me that the thing I was doing was called front-end. -
+                        so i got acquainted with front-end development. That’s how I realized what exactly I want to do
+                        in my future. As I plunged into the front-end more and more, my curiosity was growing. I
+                        subscribed to stack overflow, github, qaru, habr, etc.I learned to work with libraries and
+                        frameworksI applied some of them while creating this CV.
+                        I like this profession, as it is closely related to sustainable development. Every day I learn
+                        something new and improve myself. For this reason, I quit my previous profession and decided to
+                        devote myself to programming. I am a Frontend Web Developer, and I'm very passionate and
+                        dedicated to my work.
+                        With wide experience as a React Web Developer, I have acquired the skills and knowledge
+                        necessary to succeed in your project. I enjoy every step of the design process, from discussion
+                        and collaboration.</p>
+                </div>
+                <!-- Personal Info Ends -->
+            </div>
+            <hr class="separator">
+        </div>
+    </section>
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+        <div class="container">
+            <div class="row">
+                <!-- Personal Info Starts -->
+                <div class="col-12 col-lg-5 col-xl-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-uppercase custom-title mb-0 ft-wt-600">personal infos</h3>
+                        </div>
+                        <div class="col-12 d-block d-sm-none">
+                            <img src="assets/img/img-mobile.jpg" class="img-fluid main-img-mobile" alt="my picture" />
+                        </div>
+                        <div class="col-6">
+                            <ul class="about-list list-unstyled open-sans-font">
+                                <li> <span class="title">first name :</span> <span
+                                        class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Abu</span>
+                                </li>
+                                <li> <span class="title">last name :</span> <span
+                                        class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Rahan</span>
+                                </li>
+                                <li> <span class="title">Age :</span> <span
+                                        class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">24
+                                        Years</span> </li>
+                                <li> <span class="title">Nationality :</span> <span
+                                        class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Bangladeshi</span>
+                                </li>
+                                <li> <span class="title">Github :</span>
+                                    <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a
+                                            target="_blank" href="https://github.com/raihan6714">Visit My
+                                            Profile</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="about-list list-unstyled open-sans-font">
+                                <li> <span class="title">Address :</span> <span
+                                        class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Dhaka</span>
+                                </li>
+                                <li> <span class="title">phone :</span>
+                                    <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+880
+                                        1834526714</span>
+                                </li>
+                                <li> <span class="title">Email :</span> <span
+                                        class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">abu.rahan14@mail.com</span>
+                                </li>
+                                <li> <span class="title">Linkedin :</span>
+                                    <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">
+                                        <a target="_blank" href="https://www.linkedin.com/in/abu-rahan-8aa8b5216/">Visit
+                                            My
+                                            Profile</a></span>
+                                </li>
+                                <li> <span class="title">languages :</span>
+                                    <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Bangla,
+                                        English</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <a class="button"
+                                href="https://doc-08-ak-docs.googleusercontent.com/docs/securesc/s107uqdinikqa9bq7dec5uutbj36fsa4/a9563jr68lbuahr908jar2ghlbkuebu5/1638178125000/13528455151627196635/13528455151627196635/1_b-HApH5bHxwiq0G9NApqpp_qg5Ndmo-?e=download&authuser=0">
+                                <span class="button-text">Download Resume</span>
+                                <span class="button-icon fa fa-download"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personal Info Ends -->
+                <!-- Boxes Starts -->
+                <div class="col-12 col-lg-7 col-xl-6 mt-5 mt-lg-0">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="box-stats with-margin">
+                                <h3 class="poppins-font position-relative">02</h3>
+                                <p class="open-sans-font m-0 position-relative text-uppercase">years of <span
+                                        class="d-block">experience</span></p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box-stats with-margin">
+                                <h3 class="poppins-font position-relative">30</h3>
+                                <p class="open-sans-font m-0 position-relative text-uppercase">completed <span
+                                        class="d-block">projects</span></p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box-stats">
+                                <h3 class="poppins-font position-relative">15</h3>
+                                <p class="open-sans-font m-0 position-relative text-uppercase">Happy<span
+                                        class="d-block">customers</span></p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box-stats">
+                                <h3 class="poppins-font position-relative">05</h3>
+                                <p class="open-sans-font m-0 position-relative text-uppercase">awards <span
+                                        class="d-block">won</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boxes Ends -->
+            </div>
+            <hr class="separator">
+            <!-- Skills Starts -->
+            <div class="row">
+                <div class="col-12">
+                    <h3
+                        class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">
+                        My Skills</h3>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p90">
+                        <span>90%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">html</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p85">
+                        <span>85%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">javascript</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p80">
+                        <span>80%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">css</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p80">
+                        <span>80%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">react</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p60">
+                        <span>60%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">php</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p50">
+                        <span>50%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">node</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p40">
+                        <span>40%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">jquery</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-sm-5">
+                    <div class="c100 p30">
+                        <span>30%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">wordpress</h6>
+                </div>
+
+            </div>
+            <!-- Skills Ends -->
+            <hr class="separator mt-1">
+            <!-- Experience & Education Starts -->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience
+                        <span>&</span> Education/Coursh
+                    </h3>
+                </div>
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-briefcase"></i>
+                                </div>
+                                <span class="time open-sans-font text-uppercase">2020 Nobember - Present</span>
+                                <h5 class="poppins-font text-uppercase">Junior Frontend Developer <span
+                                        class="place open-sans-font">United Softwere Solutions</span></h5>
+                                <p class="open-sans-font">Here i am Working as a Frontend Developer and working with
+                                    <br />
+                                    • Developed front for the entire website using HTML5, CSS3, and Javascript <br />
+                                    • Testing the website on multiple browsers with their old as well as latest release.
+                                    <br />
+                                    • Involved in requirement gathering, analysis, design and development of the
+                                    application.<br />
+                                    • Model view control (MVC) design pattern is implemented with PHP
+                                </p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-briefcase"></i>
+                                </div>
+                                <span class="time open-sans-font text-uppercase">2019 November - 2020 November</span>
+                                <h5 class="poppins-font text-uppercase"> Assistant Marketing Manager <span
+                                        class="place open-sans-font">United Softwere Solutions</span></h5>
+                                <p class="open-sans-font">Here Im work as a Assistant Marketing Manager</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <span class="time open-sans-font text-uppercase"> 2021 July - 2021 November </span>
+                                <h5 class="poppins-font text-uppercase">
+                                    Web Development Course
+                                    <span class="place open-sans-font">Programming Hero</span>
+                                </h5>
+                                <p class="open-sans-font">Web development is the work involved in developing a website
+                                    for the Internet or an intranet. Web development can range from developing a simple
+                                    single static page of plain text to complex web applications, electronic businesses,
+                                    and social network services</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <span class="time open-sans-font text-uppercase">2017</span>
+                                <h5 class="poppins-font text-uppercase">HSC Degree <span
+                                        class="place open-sans-font">Alamgir Munsur (Mintu) Memorial College</span></h5>
+                                <p class="open-sans-font">The Higher Secondary Certificate (HSC) is a public examination
+                                    credential in Bangladesh</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <span class="time open-sans-font text-uppercase">2014</span>
+                                <h5 class="poppins-font text-uppercase">SSC Degree <span
+                                        class="place open-sans-font">Shaneed Smrity High School</span></h5>
+                                <p class="open-sans-font">Secondary School Certificate is a public examination in
+                                    Bangladesh conducted by the Boards of Intermediate and Secondary Education under the
+                                    Ministry of Education.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience & Education Ends -->
+        </div>
+    </section>
+    <!-- Main Content Ends -->
+
+    <!-- Template JS Files -->
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <script src="assets/js/styleswitcher.js"></script>
+    <script src="assets/js/preloader.min.js"></script>
+    <script src="assets/js/fm.revealator.jquery.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/cbpGridGallery.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+
+<!-- Mirrored from slimhamdi.net/tunis/dark/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Nov 2021 07:19:52 GMT -->
+
+</html>
